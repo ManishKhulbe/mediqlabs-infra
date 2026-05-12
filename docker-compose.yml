@@ -54,6 +54,7 @@ services:
       SMTP_PASSWORD: ${SMTP_PASSWORD}
       SMTP_SECURE: ${SMTP_SECURE}
       OTP_PROVIDER: ${OTP_PROVIDER}
+      COOKIE_DOMAIN: ${COOKIE_DOMAIN}
     healthcheck:
       test: ["CMD", "wget", "-qO-", "http://localhost:5002/health"]
       interval: 30s
